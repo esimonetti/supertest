@@ -5,4 +5,6 @@ if (is_file($autoload = getcwd() . '/vendor/autoload.php')) {
     require $autoload;
 }
 
-\TestPackage\MainClass::doSomething();
+use \TestPackage\MainClass;
+
+MainClass::doSomething();
