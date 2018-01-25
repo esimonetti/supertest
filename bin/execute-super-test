@@ -1,0 +1,8 @@
+#!/usr/bin/env php
+<?php
+
+if (is_file($autoload = getcwd() . '/vendor/autoload.php')) {
+    require $autoload;
+}
+
+\TestPackage\MainClass::doSomething();
